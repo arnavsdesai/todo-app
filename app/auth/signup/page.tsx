@@ -1,6 +1,6 @@
 
 export default function Signup() {
     return (
-        <div>Signup Page</div>
+        <div className="text-white">Signup Page</div>
     );
 }

@@ -1,14 +1,4 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog"
+import { Login, Signup } from "@/components/Auth";
 
 
 export default function Home() {
@@ -21,39 +11,4 @@ export default function Home() {
       </div>
     </div>
   );
-}
-
-function Signup() {
-  return (
-    <Dialog>
-      <DialogTrigger asChild>
-        <Button variant="secondary" className="font-bold text-2xl w-28 h-12">Sign up</Button>
-      </DialogTrigger>
-      <DialogContent className="max-w-[425px]">
-        <DialogHeader>
-          <DialogTitle className="font-bold text-2xl">Sign up</DialogTitle>
-        </DialogHeader>
-      </DialogContent>
-    </Dialog>
-  )
-}
-
-function Login() {
-  return (
-    <Dialog>
-      <DialogTrigger asChild>
-        <Button variant="secondary" className="font-bold text-2xl w-24 h-12">Log in</Button>
-      </DialogTrigger>
-      <DialogContent className="max-w-[425px]">
-        <DialogHeader>
-          <DialogTitle className="font-bold text-2xl">Log in</DialogTitle>
-        </DialogHeader>
-        <div>
-          <Link href="#">
-            <p className="text-muted-foreground text-sm underline underline-offset-2 hover:text-primary">Forgot Password?</p>
-          </Link>
-        </div>
-      </DialogContent>
-    </Dialog>
-  )
 }
